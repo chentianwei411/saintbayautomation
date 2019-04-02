@@ -1,24 +1,6 @@
-# README
+# 使用Stimulus添加动态form.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Stimulus是一个现代JS框架，不会完全占据你的前端，事实上它不涉及渲染HTML。
+相反，它被设计用于增加你的HTML和刚刚够好的behavior。
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* projects的tasks的添加删除。
