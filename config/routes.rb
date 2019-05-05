@@ -1,6 +1,22 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
+  get '/profile', to: 'profile#index'
+
+  resources :products do
+    collection do
+      get 'label'
+      get 'label/LRD2100' , to: 'products#label2100'
+      get 'label/LRD6300' , to: 'products#label6300'
+      get 'label/LRD8200' , to: 'products#label8200'
+      get 'eddy'
+      get 'capacitor'
+      get 'spindle'
+      get "spindle/sea", to: 'products#spindlesea'
+      get "spindle/sci", to: 'products#spindlesci'
+    end
+  end
+
   resources :projects
   namespace :admin do
       resources :users

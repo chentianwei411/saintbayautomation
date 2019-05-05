@@ -1,2 +1,38 @@
-<h1>Welcome to Jumpstart!</h1>
-<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+<div>
+  <%= link_to image_tag("firstpage.jpg",alt:"background",width:"1000",style:"width: 100%; height: auto;"), profile_path %>
+  <!-- <img src="firstpage.jpg" alt="background" width="1000" style="width: 100%; height: auto;"> -->
+</div>
+<div class="container">
+  <div class="row">
+    <div class="firstpage-out col-12 col-sm-12 col-md-4" >
+      <div class="firstpage-in">
+        <h6>公司简介</h6>
+        <div>
+          &nbsp;&nbsp;&nbsp;&nbsp;圣湾自动化有限公司于2019年在中国香港成立。
+        </div>
+        <p style="text-align: right; padding-top: 25px;"><%= link_to("更多...", profile_path)%></p>
+      </div>
+    </div>
+    <div class="firstpage-out col-12 col-sm-12 col-md-4" >
+      <div class="firstpage-in">
+        <h6>产品介绍</h6>
+        <ul>
+          <li><%= link_to "精密标签传感器", "#"%></li>
+          <li><%= link_to "电容式传感器", "#"%></li>
+          <li><%= link_to "电涡流传感器", "#"%></li>
+          <li><%= link_to "机床测量工具", "#"%></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="firstpage-out col-12 col-sm-12 col-md-4">
+      <div class="firstpage-in" style="margin-right: 0px;">
+        <h6>联系我们</h6>
+        <div>
+          <p style="margin-bottom: 0px;">Technical-Email: SaintBayAuto@163.com</p>
+          <p>Sales-Email: SaintBayAuto@hotmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

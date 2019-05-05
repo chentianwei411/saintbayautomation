@@ -20,3 +20,82 @@
 body > .alert {
   margin-bottom: 0;
 }
+
+.firstpage-out {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.firstpage-in {
+  box-sizing: border-box;
+  width: auto;
+  min-height: 220px;
+  max-height: 220px;
+  border: 1px solid black;
+  margin-right: 15px;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  a {
+    color:black;
+  }
+  a:hover {font-size:120%;}
+}
+
+.dropdown-menu {
+  box-sizing: border-box;
+  min-width:180px;
+  opacity: 0.6;
+}
+
+.dropdown-item {
+  font-size: 18px;
+  padding-right: 10px;
+  padding-left: 15px;
+  width: auto;
+}
+
+.labeltable {
+  td {
+    font-size: 18px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  th {
+    text-align: center;
+  }
+}
+
+
+.tdbg {
+  background-color: rgb(7,71,140);
+  color: white;
+}
+
+.AlternateRow {
+  background-color: rgb(246,247,249);
+}
+
+
+.boxRightNoWidthNoBorder {
+  padding: 6px;
+  float: right;
+  color: #000000;
+  background-color: #FFFFFF;
+  margin: 8px;
+  text-align: center;
+}
+
+#spindlesea {
+  h2 {
+    font-size: 1.3em;
+    color: #EA5E00;
+    margin-top: 0px;
+  }
+
+  strong {
+    color: #005B9E;
+  }
+}
