@@ -1,33 +1,40 @@
 <div>
-  <%= link_to image_tag("firstpage.jpg",alt:"background",width:"1000",style:"width: 100%; height: auto;"), profile_path %>
+  <%= link_to image_tag("firstpage-20.jpeg",alt:"background",width:"1000",style:"width: 100%; height: auto;"), profile_path %>
   <!-- <img src="firstpage.jpg" alt="background" width="1000" style="width: 100%; height: auto;"> -->
 </div>
 <div class="container">
   <div class="row">
     <div class="firstpage-out col-12 col-sm-12 col-md-4" >
       <div class="firstpage-in">
-        <h6>公司简介</h6>
-        <div>
-          &nbsp;&nbsp;&nbsp;&nbsp;圣湾自动化有限公司于2019年在中国香港成立。
-        </div>
-        <p style="text-align: right; padding-top: 25px;"><%= link_to("更多...", profile_path)%></p>
+        <h6><%= t("nav-introduce")%></h6>
+        <% if params[:locale] != "en"%>
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;圣湾自动化有限公司于2019年在中国香港成立。
+          </div>
+          <p style="text-align: right; padding-top: 25px;"><small><%= link_to("更多...", profile_path)%></small></p>
+        <% else %>
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;Hongkong SaintBayAuto Co., Ltd was founded at Hongkong City of PRC in 2019。
+          </div>
+          <p style="text-align: right; padding-top: 25px;"><%= link_to("more...", profile_path)%></p>
+        <% end %>
       </div>
     </div>
     <div class="firstpage-out col-12 col-sm-12 col-md-4" >
       <div class="firstpage-in">
-        <h6>产品介绍</h6>
+        <h6><%= t("nav-products")%></h6>
         <ul>
-          <li><%= link_to "精密标签传感器", "#"%></li>
-          <li><%= link_to "电容式传感器", "#"%></li>
-          <li><%= link_to "电涡流传感器", "#"%></li>
-          <li><%= link_to "机床测量工具", "#"%></li>
+          <li><%= link_to t("label"), "#"%></li>
+          <li><%= link_to t("capacitor"), "#"%></li>
+          <li><%= link_to t("eddy"), "#"%></li>
+          <li><%= link_to t("spindle"), "#"%></li>
 
         </ul>
       </div>
     </div>
     <div class="firstpage-out col-12 col-sm-12 col-md-4">
       <div class="firstpage-in" style="margin-right: 0px;">
-        <h6>联系我们</h6>
+        <h6><%= t("contact")%></h6>
         <div>
           <p style="margin-bottom: 0px;">Technical-Email: SaintBayAuto@163.com</p>
           <p>Sales-Email: SaintBayAuto@hotmail.com</p>

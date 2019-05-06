@@ -30,4 +30,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  title: "SaintBayAutomation"
+  nav-home: "HOME"
+  nav-introduce: "INTRODUCE"
+  nav-products: "products"
+  label: "Label Sensors"
+  capacitor: "Capacitive Sensors"
+  eddy: "Eddy-Current Sensors"
+  spindle: "spindle Measurement"
+  contact: "Contact Us"
