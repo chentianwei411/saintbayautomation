@@ -23,8 +23,8 @@
       <div class="firstpage-in">
         <h6><%= t("nav-products")%></h6>
         <ul>
-          <li><%= link_to t("label"), "#"%></li>
-          <li><%= link_to t("capacitor"), "#"%></li>
+          <li><%= link_to t("label"), label_products_path({"locale"=> params[:locale]})%></li>
+          <li><%= link_to t("capacitor"), capacitor_products_path({"locale"=> params[:locale]})%></li>
           <li><%= link_to t("eddy"), "#"%></li>
           <li><%= link_to t("spindle"), "#"%></li>
 
