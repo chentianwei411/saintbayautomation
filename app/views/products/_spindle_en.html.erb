@@ -1,0 +1,155 @@
+<div class="card" style="margin-top:10px; margin-bottom:10px;">
+  <div class="card-header bg-light"><b>QUICKLY UNDERSTAND – SAVE TIME – INCREASE PROFITABILITY</b></div>
+  <div class="card-body">
+    <div class="">
+      <span class="" style="line-height: 50px;">
+        <p style="color: blue;">PRODUCTION ENGINEER, MACHINIST OR MAINTENANCE PROFESSIONAL</p>
+        <p>Imagine if you could:</p>
+        <span style="font-family: 微软雅黑, 'Microsoft YaHei';">
+          <ul>
+            <li> quickly prove with data the overall condition of a spindle</li>
+            <li>determine a machine’s best and worst operating speeds</li>
+            <li> identify potential root causes of issues</li>
+          </ul>
+        </span>
+      </span>
+      <span class="" style="line-height: 50px;">
+        <p style="color: blue;">PLANT MANAGER, PRODUCTION SUPERVISOR OR ENGINEERING LEAD</p>
+        <p>Lion Precision’s Machine Tool Products will allow you to:</p>
+        <span style="font-family: 微软雅黑, 'Microsoft YaHei';">
+          <ul>
+            <li>define the best machine for the job</li>
+            <li> minimize unnecessary spindle rebuilds or replacements</li>
+            <li>better manage your machine tools</li>
+          </ul>
+        </span>
+      </span>
+      <span class="" style="line-height: 50px;">
+        <span style="font-family: 微软雅黑, 'Microsoft YaHei';">
+          <p style="color: blue;">RESEARCHER, PROFESSOR, SCIENTIST OR METROLOGIST</p>
+          <p>Our Technology provides you with data that will help you:</p>
+          <ul>
+            <li>expand your knowledge of a machine’s performance</li>
+            <li>allow you to advance a machine to a higher level of precision</li>
+            <li>all while speeding up your research process and improving lab capabilities</li>
+          </ul>
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="card" style="margin-top:10px; margin-bottom:10px;">
+  <div class="card-header bg-light">Data</div>
+  <div class="card-body"  style="padding:0px;">
+    <table class="table table-bordered  labeltable" style="margin: 0px;">
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th align="center" width="25%"><%= link_to("Spindle Error Analyzer", spindle_sea_products_path)%></th>
+          <th align="center" width="25%"><%= link_to("Spindle check Analyzer", "#")%></th>
+          <th align="center" width="25%"><%= link_to("Spindle check Inspector", spindle_sci_products_path)%></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4" class="tdbg"><b>PERFORMANCE</b></td>
+        </tr>
+        <tr>
+          <td class="AlternateRow">Max RPM</td>
+          <td align="center">No limit</td>
+          <td align="center">120000</td>
+          <td align="center">120000</td>
+        </tr>
+        <tr>
+          <td class="AlternateRow">Min RPM</td>
+          <td align="center"><1</td>
+          <td align="center">12</td>
+          <td align="center">100</td>
+        </tr>
+        <tr>
+          <td class="AlternateRow">Using Long Tool (>300mm)</td>
+          <td align="center">✅</td>
+          <td align="center"></td>
+          <td align="center">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="AlternateRow">Using Short Tool (<300mm)</td>
+          <td align="center">✅</td>
+          <td align="center">✅</td>
+          <td align="center">✅</td>
+        </tr>
+        <tr>
+          <td class="AlternateRow">Channels/Package</td>
+          <td align="center">1-5</td>
+          <td align="center">3</td>
+          <td align="center">3</td>
+        </tr>
+        <tr>
+          <td class="AlternateRow">EAR99 Version (No Export License Req.)</td>
+          <td align="center"></td>
+          <td align="center"></td>
+          <td align="center">✅</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div data-controller="products">
+  <div class="card" style="margin-top:10px; margin-bottom:10px;">
+    <div class="card-header bg-light" data-index="0" data-action="click->products#display_page">HOW IT WORKS</div>
+    <div data-target="products.page"  class="card-body"  style="padding:0px; display:none;">
+      <%= tag.img src:"../images/spindle/spindle-1-en.png", style: "width: 100%; min-height: 800px; margin-left:auto; margin-right:auto; display: block;" %>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:10px; margin-bottom:10px;">
+    <div class="card-header bg-light" data-index="1" data-action="click->products#display_page">SETUP & OPERATION</div>
+    <div data-target="products.page" class="card-body"  style="padding:0px; display: none;">
+      <%= tag.img src:"../images/spindle/spindle-2-en.png", style: "width: 100%; min-height: 800px; margin-left:auto; margin-right:auto; display: block;" %>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:10px; margin-bottom:10px;">
+    <div class="card-header bg-light" data-index="2" data-action="click->products#display_page">THERMAL MEASUREMENT</div>
+    <div data-target="products.page" class="card-body"  style="padding:0px; display:none;">
+      <%= tag.img src:"../images/spindle/spindle-3-en.png", style: "width: 100%; min-height: 600px; margin-left:auto; margin-right:auto; display: block;" %>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:10px; margin-bottom:10px;">
+    <div class="card-header bg-light" data-index="3" data-action="click->products#display_page">POSITION MEASUREMENT</div>
+    <div data-target="products.page" class="card-body"  style="padding:0px; display:none;">
+      <%= tag.img src:"../images/spindle/spindle-4-en.png", style: "width: 100%; min-height: 800px; margin-left:auto; margin-right:auto; display: block;" %>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:10px; margin-bottom:10px;">
+    <div class="card-header bg-light" data-index="4" data-action="click->products#display_page">DYNAMIC MEASUREMENT one</div>
+    <div data-target="products.page" class="card-body"  style="padding:0px; display: none;">
+      <%= tag.img src:"../images/spindle/spindle-5-en.png", style: "width: 100%; min-height: 800px; margin-left:auto; margin-right:auto; display: block;" %>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:10px; margin-bottom:10px;">
+    <div class="card-header bg-light" data-index="5" data-action="click->products#display_page">DYNAMIC MEASUREMENT two</div>
+    <div data-target="products.page" class="card-body"  style="padding:0px; display: none;">
+      <%= tag.img src:"../images/spindle/spindle-6-en.png", style: "width: 100%; min-height: 800px; margin-left:auto; margin-right:auto; display: block;" %>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:10px; margin-bottom:10px;">
+    <div class="card-header bg-light" data-index="6" data-action="click->products#display_page">HARDWARE</div>
+    <div data-target="products.page" class="card-body"  style="padding:0px; display: none;">
+      <%= tag.img src:"../images/spindle/spindle-7-en.png", style: "width: 100%; min-height: 300px; margin-left:auto; margin-right:auto; display: block;" %>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:10px; margin-bottom:10px;">
+    <div class="card-header bg-light" data-index="7" data-action="click->products#display_page">DETAIAILED DATA</div>
+    <div data-target="products.page" class="card-body"  style="padding:0px; display: none;">
+      <%= tag.img src:"../images/spindle/spindledata-en.png", style: "width: 100%; min-height: 800px; margin-left:auto; margin-right:auto; display: block;" %>
+    </div>
+  </div>
+</div>

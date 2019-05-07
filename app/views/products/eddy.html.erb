@@ -3,47 +3,73 @@
 </div>
 
 <div class="card" style="margin-top:10px;">
-  <div class="card-header bg-light">电涡流传感器</div>
+  <div class="card-header bg-light"><%= t(:eddy)%></div>
   <div class="card-body">
-    <ul>
-      <li>位置 位移</li>
-      <li>高速度 高精度</li>
-      <li>标准化解决方案和定制解决方案</li>
-    </ul>
-    <span>
-      <!-- <%= link_to(tag.img(src:"../images/capacitor-2.png", alt:"", style: "width: 300px; height: 200px; ", class: 'img-thumbnail'), "/") %> -->
-    <span>
-    <span>
-      <!-- <%= link_to(tag.img(src:"../images/capacitor-3.png", alt:"", style: "width: 300px; height: 200px; ", class: 'img-thumbnail'), "/") %> -->
-    </span>
-    <span>
-      <!-- <%= link_to(tag.img(src:"../images/capacitor-4.png", alt:"", style: "width: 300px; height: 200px; ", class: 'img-thumbnail'), "/") %> -->
-    </span>
+    <% if params[:locale] == "en"%>
+      <ul>
+        <li>Position • Displacement</li>
+        <li>High Speed • High Resolution</li>
+        <li>Off-The-Shelf and Customized Solutions</li>
+      </ul>
+    <% else %>
+      <ul>
+        <li>位置 位移</li>
+        <li>高速度 高精度</li>
+        <li>标准化解决方案和定制解决方案</li>
+      </ul>
+    <% end %>
   </div>
 </div>
 
-<div class="card capacitor" style="margin-top:10px;">
-  <div class="card-header bg-light">非接触精密传感器 专家级解决方案</div>
-  <div class="card-body">
-    <h3>基本原理</h3>
-    <p>电涡流传感器在探头顶端产生交变磁场.当该磁场接近导电材料时，磁场会在该材料内产生(催生)微弱的电涡流。这些电流将产生 与传感器磁场相反的磁场,随着探头与导电目标之间的间隙越来越小，磁场互感也随之变化，传感器的电子测量装置将对该磁场互 感进行测量，并产生与间隙变化成正比的输出电压。</p>
-    <h3>导电目标</h3>
-    <p>目标材料内催生的电涡流强度取决于所使用的特殊材料,因此，电涡流传感器对材料的变化相当灵敏,磁性材料(铁、钢)和非磁性材 料(铝、铜)之间可能存在巨大差异。两种非磁性材料之间的差异虽然不大，但仍比较明显,为保证精确的校准，所用材料必须符合订 单要求。由于磁场会穿透目标表面，因此，目标材料的厚度必须达到最低要求,此类要求依据材料类型而定而定。技术说明 LT02-0011，《建议目标材料最低厚度》详细介绍了许多材料的最低目标厚度。
-如需查看技术说明，请登陆 www.lionprecision.com;然后点击 Technical Library(技术图书馆)。</p>
-    <h3>恶劣环境</h3>
-    <p>由于电涡流传感器的磁场对非导电材料的“视而不见”，因此其不受大多数污染物的影响.这一特性使电涡流传感器可工作在有机器 冷却剂的环境中，或在检测区域内存在其他液体材料的情况下使用。</p>
-    <h3>精度最大化</h3>
-    <p>精密的电涡流传感器处于高分辨率时的精确度可能会受到环境和测量设置的影响。测试目标区域至少为探头检测区域直径的3倍, 探头必须置于稳定环境中的牢固机械系统上,因为即使最轻微的温度变化也可导致高分辨率传感器所测目标范围的扩大。</p>
-    <h3>分辨率</h3>
-    <p>分辨率是一个测量系统能够测量的最小单位,分辨率实质上是对传感器输出时存在的电噪声的测量。电涡流传感器的分辨率是系统 带宽所具备的功能,带宽越低，分辨率越高。在对比规格时，应确保您已知晓与指定分辨率相对应的带宽。</p>
+<% if params[:locale] != "en"%>
+  <div class="card capacitor" style="margin-top:10px;">
+    <div class="card-header bg-light">非接触精密传感器 专家级解决方案</div>
+    <div class="card-body">
+      <h3>基本原理</h3>
+      <p>电涡流传感器在探头顶端产生交变磁场.当该磁场接近导电材料时，磁场会在该材料内产生(催生)微弱的电涡流。这些电流将产生 与传感器磁场相反的磁场,随着探头与导电目标之间的间隙越来越小，磁场互感也随之变化，传感器的电子测量装置将对该磁场互 感进行测量，并产生与间隙变化成正比的输出电压。</p>
+      <h3>导电目标</h3>
+      <p>目标材料内催生的电涡流强度取决于所使用的特殊材料,因此，电涡流传感器对材料的变化相当灵敏,磁性材料(铁、钢)和非磁性材 料(铝、铜)之间可能存在巨大差异。两种非磁性材料之间的差异虽然不大，但仍比较明显,为保证精确的校准，所用材料必须符合订 单要求。由于磁场会穿透目标表面，因此，目标材料的厚度必须达到最低要求,此类要求依据材料类型而定而定。技术说明 LT02-0011，《建议目标材料最低厚度》详细介绍了许多材料的最低目标厚度。
+  如需查看技术说明，请登陆 www.lionprecision.com;然后点击 Technical Library(技术图书馆)。</p>
+      <h3>恶劣环境</h3>
+      <p>由于电涡流传感器的磁场对非导电材料的“视而不见”，因此其不受大多数污染物的影响.这一特性使电涡流传感器可工作在有机器 冷却剂的环境中，或在检测区域内存在其他液体材料的情况下使用。</p>
+      <h3>精度最大化</h3>
+      <p>精密的电涡流传感器处于高分辨率时的精确度可能会受到环境和测量设置的影响。测试目标区域至少为探头检测区域直径的3倍, 探头必须置于稳定环境中的牢固机械系统上,因为即使最轻微的温度变化也可导致高分辨率传感器所测目标范围的扩大。</p>
+      <h3>分辨率</h3>
+      <p>分辨率是一个测量系统能够测量的最小单位,分辨率实质上是对传感器输出时存在的电噪声的测量。电涡流传感器的分辨率是系统 带宽所具备的功能,带宽越低，分辨率越高。在对比规格时，应确保您已知晓与指定分辨率相对应的带宽。</p>
+    </div>
   </div>
-</div>
 
-<div class="card" style="margin-top:10px;">
-  <div class="card-header bg-light">驱动器参数</div>
-  <div class="card-body">
-    <span>
-      <%= tag.img(src:"../images/eddy-1.png", alt:"", style: "width: 100%; height: auto; ", class: 'img-thumbnail') %>
-    <span>
+  <div class="card" style="margin-top:10px;">
+    <div class="card-header bg-light">驱动器参数</div>
+    <div class="card-body">
+      <span>
+        <%= tag.img(src:"../images/eddy-1.png", alt:"", style: "width: 100%; height: auto; ", class: 'img-thumbnail') %>
+      <span>
+    </div>
   </div>
-</div>
+<% else %>
+  <div class="card capacitor" style="margin-top:10px;">
+    <div class="card-body">
+      <h3>Basics</h3>
+      <p>An eddy-current sensor produces an alternating magnetic field at the probe tip. When this field is near a conductive material, the field creates (induces) small electrical eddy-currents in the material. These currents generate a magnetic field that opposes the field from the sensor. As the gap between the probe and target gets smaller, the field interaction changes. The sensor electronics measure this field interaction and generate an output voltage proportional to the change in the gap.</p>
+      <h3>Conductive Targets</h3>
+      <p>The eddy-currents induced in the target material are dependent on the material’s properties of permeability and resistivity. As a result, eddy-current sensors are sensitive to changes in material. There can be a drastic difference between magnetic (iron, steel) and nonmagnetic (aluminum, copper) materials. Less drastic, but still significant, is the difference between two nonmagnetic materials. The material and alloy must be specified with orders to assure an accurate calibration. Because the magnetic fields penetrate the surface of the target, target materials have minimum thickness requirements; this varies with material type. TechNote LT02-0011, Minimum Recommended Target Thickness details the minimum target thickness for many materials.
+The TechNote is available at www.lionprecision.com; click on Technical Library.</p>
+      <h3>Hostile Environments</h3>
+      <p>The magnetic fields of eddy-current sensors do not “see” nonconductive materials and therefore are not affected by most contaminants. This allows an eddy-current sensor to operate while immersed in liquids and in the presence of machine coolants or other liquid materials present in the sensing area</p>
+      <h3>Maximizing Accuracy</h3>
+      <p>Accuracy at the high resolutions created by precision eddy-current sensors may be affected by the environment and measurement setup. Target areas must be at least three times larger than the probe diameter. Probes must be positioned in a stable mechanical system in a stable environment. Even small changes in temperature cause expansions of the target that are detectable by high- resolution sensors.</p>
+      <h3>Resolution</h3>
+      <p>Resolution is a measurement system’s smallest possible measurement. Resolution is essentially a measurement of electrical noise present at the sensor output. Eddy-current sensor resolution is a function of the bandwidth of the system. The lower the bandwidth, the better the resolution. When comparing specifications, be sure to know the bandwidth at which the resolution is specified.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:10px;">
+    <div class="card-header bg-light">Driver Comparison</div>
+    <div class="card-body">
+      <span>
+        <%= tag.img(src:"../images/eddy-1-en.png", alt:"", style: "width: 100%; height: auto; ", class: 'img-thumbnail') %>
+      <span>
+    </div>
+  </div>
+<% end %>

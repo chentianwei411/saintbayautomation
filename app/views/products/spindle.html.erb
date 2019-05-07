@@ -3,181 +3,36 @@
 </div>
 
 <div class="card" style="margin-top:10px;">
-  <div class="card-header bg-light"><b>机床测量工具</b></div>
+  <div class="card-header bg-light"><b><%= t(:spindle)%></b></div>
   <div class="card-body" style="padding:10px;">
     <div class="row">
       <div class="col-4" style=" ">
-        <p style="margin-bottom:0px;" align="center">主轴误差分析仪SEA</p>
+        <p style="margin-bottom:0px;" align="center"><%= t(:sea)%></p>
         <p align="center"><%= link_to(tag.img(src:"../images/sea-3.jpg", alt:"sea", style: "width: 100%; height: 200px;", class: 'img-thumbnail'), spindle_sea_products_path) %></p>
         <p style="margin-bottom:0px; padding-left: px;">
-          <small>灵活配置参数，能实现精确测量并取得最高精度。可提高得最佳分析设备。</small>
+          <small><%= t("sea-instruction")%></small>
         </p>
       </div>
       <div class="col-4" style="">
-        <p style="margin-bottom:0px;" align="center">主轴检测分析仪SCA</p>
+        <p style="margin-bottom:0px;" align="center"><%= t(:sca)%></p>
         <p align="center"><%= link_to(tag.img(src:"../images/sca.png", alt:"sca", style: "width: 100%; height: 200px; ", class: 'img-thumbnail'), "#") %></p>
         <p align="center" style="margin-bottom:0px;">
-          <small>高精度，能够详细分析机床性能。</small>
+          <small><%= t("sca-instruction")%></small>
         </p>
       </div>
       <div class="col-4" style="">
-        <p style="margin-bottom:0px;" align="center">主轴检测检查仪SCI</p>
+        <p style="margin-bottom:0px;" align="center"><%= t(:sci)%></p>
         <p align="center"><%= link_to(tag.img(src:"../images/sci-1.jpg", alt:"sci", style: "width: 100%; height: 200px; ", class: 'img-thumbnail'), spindle_sci_products_path) %></p>
         <p style="margin-bottom:0px;">
-          <small>能在不同速度，不同机床之间实现维护和测试测量。</small>
+          <small><%= t('sci-instruction')%></small>
         </p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="card" style="margin-top:10px; margin-bottom:10px;">
-  <div class="card-header bg-light"><b>快速理解--节约时间--增加效益</b></div>
-  <div class="card-body">
-    <div class="row">
-      <span class="col-6" style="line-height: 50px;">
-        <p style="color: blue;">生产工程师，机械师或维护专家</p>
-        <span style="font-family: 微软雅黑, 'Microsoft YaHei';">
-          <ul>
-            <li>快速提高主轴总体状况的数据</li>
-            <li>决定机床最佳和最差的运行速度</li>
-            <li>寻找问题可能存在的根本原因</li>
-          </ul>
-        </span>
-      </span>
-      <span class="col-6" style="line-height: 50px;">
-        <p style="color: blue;">工厂经理，生产监督员或工程师</p>
-        <span style="font-family: 微软雅黑, 'Microsoft YaHei';">
-          <ul>
-            <li>为作业定义最佳机器</li>
-            <li>尽可能减少不必要的主轴重建或更换</li>
-            <li>更好的管理机床</li>
-          </ul>
-        </span>
-      </span>
-      <!-- <span class="col-6" style="line-height: 50px;">
-        <span style="font-family: 微软雅黑, 'Microsoft YaHei';">
-          <p style="color: blue;">研究员，教授，科学家或计算学家</p>
-          <ul>
-            <li>扩展您对机器性能的了解</li>
-            <li>允许您将机床提升到更高的精度水平</li>
-            <li>加快您的研究过程同时提高试验能力</li>
-          </ul>
-        </span>
-      </span> -->
-    </div>
-  </div>
-</div>
-
-<div class="card" style="margin-top:10px; margin-bottom:10px;">
-  <div class="card-header bg-light">如何运作</div>
-  <div class="card-body"  style="padding:0px;">
-    <%= tag.img src:"../images/spindle-1.png", style: "width: 100%; min-height: 800px; margin-left:auto; margin-right:auto; display: block;" %>
-  </div>
-</div>
-
-<div class="card" style="margin-top:10px; margin-bottom:10px;">
-  <div class="card-header bg-light">安装和操作</div>
-  <div class="card-body"  style="padding:0px;">
-    <%= tag.img src:"../images/spindle-2.png", style: "width: 100%; min-height: 800px; margin-left:auto; margin-right:auto; display: block;" %>
-  </div>
-</div>
-
-<div class="card" style="margin-top:10px; margin-bottom:10px;">
-  <div class="card-header bg-light">温飘测量</div>
-  <div class="card-body"  style="padding:0px;">
-    <%= tag.img src:"../images/spindle-3.png", style: "width: 100%; min-height: 600px; margin-left:auto; margin-right:auto; display: block;" %>
-  </div>
-</div>
-
-<div class="card" style="margin-top:10px; margin-bottom:10px;">
-  <div class="card-header bg-light">位置测量</div>
-  <div class="card-body"  style="padding:0px;">
-    <%= tag.img src:"../images/spindle-4.png", style: "width: 100%; min-height: 800px; margin-left:auto; margin-right:auto; display: block;" %>
-  </div>
-</div>
-
-<div class="card" style="margin-top:10px; margin-bottom:10px;">
-  <div class="card-header bg-light">动态测量1</div>
-  <div class="card-body"  style="padding:0px;">
-    <%= tag.img src:"../images/spindle-5.png", style: "width: 100%; min-height: 800px; margin-left:auto; margin-right:auto; display: block;" %>
-  </div>
-</div>
-
-<div class="card" style="margin-top:10px; margin-bottom:10px;">
-  <div class="card-header bg-light">动态测量2</div>
-  <div class="card-body"  style="padding:0px;">
-    <%= tag.img src:"../images/spindle-6.png", style: "width: 100%; min-height: 800px; margin-left:auto; margin-right:auto; display: block;" %>
-  </div>
-</div>
-
-<div class="card" style="margin-top:10px; margin-bottom:10px;">
-  <div class="card-header bg-light">硬件</div>
-  <div class="card-body"  style="padding:0px;">
-    <%= tag.img src:"../images/spindle-7.png", style: "width: 100%; min-height: 300px; margin-left:auto; margin-right:auto; display: block;" %>
-  </div>
-</div>
-
-<div class="card" style="margin-top:10px; margin-bottom:10px;">
-  <div class="card-header bg-light">参数</div>
-  <div class="card-body"  style="padding:0px;">
-    <table class="table table-bordered  labeltable" style="margin: 0px;">
-      <thead>
-        <tr>
-          <th>&nbsp;</th>
-          <th align="center" width="25%"><%= link_to("Spinde Error Analyzer", spindle_sea_products_path)%></th>
-          <th align="center" width="25%"><%= link_to("Spinde check Analyzer", "#")%></th>
-          <th align="center" width="25%"><%= link_to("Spinde check Inspector", spindle_sci_products_path)%></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td colspan="4" class="tdbg"><b>性能</b></td>
-        </tr>
-        <tr>
-          <td class="AlternateRow">最大转速</td>
-          <td align="center">无限制</td>
-          <td align="center">120000</td>
-          <td align="center">120000</td>
-        </tr>
-        <tr>
-          <td class="AlternateRow">最小转速</td>
-          <td align="center"><1</td>
-          <td align="center">12</td>
-          <td align="center">100</td>
-        </tr>
-        <tr>
-          <td class="AlternateRow">使用长工具（大于300毫米）</td>
-          <td align="center">✅</td>
-          <td align="center"></td>
-          <td align="center">&nbsp;</td>
-        </tr>
-        <tr>
-          <td class="AlternateRow">使用短工具（小于300毫米）</td>
-          <td align="center">✅</td>
-          <td align="center">✅</td>
-          <td align="center">✅</td>
-        </tr>
-        <tr>
-          <td class="AlternateRow">通道组件</td>
-          <td align="center">1-5</td>
-          <td align="center">3</td>
-          <td align="center">3</td>
-        </tr>
-        <tr>
-          <td class="AlternateRow">EAR99版本（无需出口许可证）</td>
-          <td align="center"></td>
-          <td align="center"></td>
-          <td align="center">✅</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<div class="card" style="margin-top:10px; margin-bottom:10px;">
-  <div class="card-header bg-light">详细数据</div>
-  <div class="card-body"  style="padding:0px;">
-    <%= tag.img src:"../images/spindledata-chinese.png", style: "width: 100%; min-height: 800px; margin-left:auto; margin-right:auto; display: block;" %>
-  </div>
-</div>
+<% if params[:locale] != "en"%>
+  <%= render "spindle_chinese"%>
+<% else %>
+  <%= render "spindle_en"%>
+<% end %>
