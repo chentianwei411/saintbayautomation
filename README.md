@@ -1,7 +1,7 @@
 # 搭建一个自动化产品介绍的网站
 
 * 对Lionprecision产品的展示。包括中英文。
-* 网站www.saintbayauto.com.hk。
+* 网站www.saintbayauto.com
 
 ### 使用Stimulus添加动态form.(历史功能)
 
